@@ -1,0 +1,78 @@
+Top{
+  display: flex;
+}
+
+Stats {
+  display: flex; 
+  align-items: flex-end;
+  flex-direction: column;
+  width: 100%;
+}
+
+name{
+  font-size: 20px;
+  border: solid blue;
+  border-width: 1rem 1em 2px 1rem;
+  display: flex;
+  justify-content: space-around;
+  width: 60%;
+  color :  black;
+}
+
+health{
+  font-size: 20px;
+  border: solid blue;
+  border-width: 2px 1em 2px 1rem;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  width: 60%; 
+  color: black;
+}
+
+mana{
+  font-size: 20px;
+  border: solid blue;
+  border-width: 2px 1em 2px 1rem;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap:  wrap;
+  width: 60%; 
+  color: black;
+}
+
+level{
+  font-size: 20px;
+  border: solid blue;
+  border-width: 2px 1em 1rem 1rem;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  width: 60%;
+  color: black;
+}
+
+action{
+  font-size: 30px;
+  border: 5px solid;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 100%;
+  width: 40%;
+  color: black;
+}
+
+
+Bottom{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 50%;
+}
+
+
+body{
+  background-image: url("");
+}

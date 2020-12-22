@@ -1,49 +1,55 @@
 <html>
             <head>
-                <title>HTML, CSS and JavaScript demo</title>
-                <link rel="stylesheet" type="text/css" href="../CSS/Dragon_quest.css">
-            </head>
+                <title>TP_RPG_Battle</title>
+                <link rel="stylesheet" type="text/css" href="Projet_Jeu.css">
+				<script type="text/javascript" src="Projet_Jeu.js"></script>       
+			</head>
       <body>
-<!-- Start your code here -->
 
-       <Top>
+       <PartieHaute>
 
-        <Stats> 
-          <name> 
+        <Statistiques> 
+          <noms> 
             <div><b> Hero 1 </b></div> <div><b> Hero 2 </b></div>
             <div><b> Hero 3 </b></div> <div><b> Hero 4 </b></div>
-          </name>
+          </noms>
 
-          <health>
+          <pv>
             <div> PV </div> <div> PV </div>
             <div> PV </div> <div> PV </div>
-          </health>
+          </pv>
 
           <mana>
             <div> Mana </div> <div> Mana </div>
             <div> Mana </div> <div> Mana </div>
           </mana>
 
-          <level> 
+          <niveaux> 
             <div> Niveau </div> <div> Niveau </div>
             <div> Niveau </div> <div> Niveau </div>
-          </level>
-         </Stats>
-        </Top>
+          </niveaux>
+         </Statistiques>
+        </PartieHaute>
         
- <p></p>
+        <div><p> </p></div>
 
-      <Bottom> 
-        <action>
-            <div> Attaquer </div>
-            <div> Défendre </div>
-            <div> Spécial </div>
-          </action>
+      <PartieBasse> 
+        
+        <actions>
+          <ol>
+            <li id="att" onmouseover="changeColor(this)" onmouseout="changeColor(this)"> Attaquer </li>
+            <li id="def" onmouseover="changeColor(this)" onmouseout="changeColor(this)"> Défendre </li>
+            <li id="spé" onmouseover="changeColor(this)" onmouseout="changeColor(this)"> Spéciale </li>
+          </ol>
+          </actions>
+        
+      <div class="pictos">
+        <a class="picto-item" href="#" desc="Drake (PV = )"><img src="drake.png" class="picto-item" stats="Monstre 1 & PV" width="450" height="450"></a>
+        <a class="picto-item" href="#" desc="Elemental ( PV = )"><img src="elemental.png" class="picto-item" stats="Monstre 1 & PV" width="390" height="390"></a>
+        <a class="picto-item" href="#" desc="Fossil ( PV = )"><img src="fossil.png" class="picto-item" stats="Monstre 1 & PV" width="555" height="450"></a>
+      </div>
+        
 
-        <space> 
-          <p></p>
-        </space>
-       </Bottom>
-<!-- End your code here -->
+       </PartieBasse>
       </body>
 </html>

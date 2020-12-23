@@ -65,7 +65,37 @@ PartieBasse{
   display: flex;
   align-items: center;
   flex-direction: row;
-  margin-left: 280px;
+  margin-left: 50px;
+}
+
+.picto-item {
+  position: relative;
+}
+
+.picto-item:hover:after,
+.picto-item:focus:after {
+  content: attr(desc);
+  position: absolute;
+  top: -1.4em;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+  white-space: nowrap;
+  padding: 5px 14px;
+  background: #A10684;
+  color: #000;
+  border-radius: 20px;
+  font-size: 1.2rem;
+}
+
+[desc]:hover:before,
+[desc]:focus:before {
+  content: "▼";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 20px;
+  color: #A10684;
 }
 
 .stat{
@@ -75,5 +105,5 @@ PartieBasse{
 }
 
 body{
-  background-image: url("");
-}	
+  background-image:url("parallax-forest.png");
+  background-size: 80% 160%;

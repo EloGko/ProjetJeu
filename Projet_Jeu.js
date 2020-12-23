@@ -16,6 +16,7 @@ var mana1=document.getElementById("mana1");
 var mana2=document.getElementById("mana2");
 var mana3=document.getElementById("mana3");
 var mana4=document.getElementById("mana4");
+
 var Bouton_attaque=document.getElementById("att");
 var Bouton_defense=document.getElementById("def");
 var Bouton_special=document.getElementById("spe");
@@ -37,7 +38,23 @@ function changeColor(obj) {
   }
 }
 
+function attaque_joueur(){
+  pv_monstre -= attaque_joueur
+}
+
 function attaque_monstre(){
-	vie_joueur -= atq_monstre;
+	pv_joueur = pv_joueur - attaque_monstre;
 	pv1.innerHTML = pv_joueur;
+}  
+
+function victoire(){
+	if (vie_monstre <=0){
+		Boite_dialogue.innerHTML="Vous remportez le combat";
+	}
+}
+
+function defaite(){
+	if (vie_joueur <=0){
+	Boite_dialogue.innerHTML="Vous perdez lz combat";
+	}
 }

@@ -33,14 +33,15 @@
         
         <actions>
           <ol>
-            <li id="att" onmouseover="changeColor(this)" onmouseout="changeColor(this)"> Attaquer </li>
-            <li id="def" onmouseover="changeColor(this)" onmouseout="changeColor(this)"> Défendre </li>
+            <li id="att" onmouseover="changeColor(this)" onmouseout="changeColor(this)" 
+            onmouseclick="attaque_joueur()" onmouseclick="attaque_monstre(this)"> Attaquer </li>
+            <li id="def" onmouseover="changeColor(this)" onmouseout="changeColor()"> Défendre </li>
             <li id="spe" onmouseover="changeColor(this)" onmouseout="changeColor(this)"> Spéciale </li>
           </ol>
           </actions>
         
       <div class="pictos">
-        <a class="picto-item" href="#" desc="Drake (PV = )"><img src="drake.png" class="picto-item" stats="Monstre 1 & PV" width="450" height="450"></a>
+        <a class="picto-item" href="#" desc="Drake ( PV = )"><img src="drake.png" class="picto-item" stats="Monstre 1 & PV" width="450" height="450"></a>
         <a class="picto-item" href="#" desc="Elemental ( PV = )"><img src="elemental.png" class="picto-item" stats="Monstre 1 & PV" width="390" height="390"></a>
         <a class="picto-item" href="#" desc="Fossil ( PV = )"><img src="fossil.png" class="picto-item" stats="Monstre 1 & PV" width="555" height="450"></a>
       </div>

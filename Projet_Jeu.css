@@ -6,6 +6,7 @@ Statistiques {
 }
 
 noms{
+  background-color: #FFFFFF;
   font-size: 20px;
   border: solid blue;
   border-width: 1rem 1em 2px 1rem;
@@ -16,6 +17,7 @@ noms{
 }
 
 pv{
+  background-color: #FFFFFF;
   font-size: 20px;
   border: solid blue;
   border-width: 2px 1em 2px 1rem;
@@ -27,6 +29,7 @@ pv{
 }
 
 mana{
+  background-color: #FFFFFF;
   font-size: 20px;
   border: solid blue;
   border-width: 2px 1em 1rem 1rem;
@@ -40,13 +43,14 @@ mana{
 
 
 actions{
+  background-color: #FFFFFF;
   font-size: 30px;
   border: 7px solid;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   height: 80%;
-  width: 15%;
+  width: 20%;
 }
 
 li{
